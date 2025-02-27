@@ -1,3 +1,10 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: ArialRounded;
+    src: url(../fonts/Arial-Rounded-MT-Bold/arialroundedmtbold.ttf);
+}
+
 :root {
     --vermelho-principal: #BA4949;
     --vermelho-escuro: #A44E4E;
@@ -6,7 +13,6 @@
     --vermelho-undeline: #F69D9A;
     --vermelho-texto-link: #DB524D;
     --cinza-texto: #785E60;
-    --branco: #fff;
 
     /* 
     --vermelho-escuro1: #A44E4E;
@@ -15,5 +21,99 @@
     --vermelho-escuro4: #A74242; 
     --vermelho-claro1: #C86D6D;
     --vermelho-claro2: #C15C5C;
-    */
+    */ 
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: ArialRounded;
+}
+
+main {
+
+}
+
+.bg-vermelho {
+    background-color: var(--vermelho-principal);
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    padding: 15px 0;
+    margin: auto;
+    padding: 15px 12px;
+}
+
+hr {
+    margin: 0 auto 40px;
+}
+
+header, hr {
+    width: 620px;
+}
+
+header span {
+
+}
+
+header button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+/** Imagem dos botões da navbar */
+header button img {
+    width: 16px;
+    display: inline;
+}
+
+header button div {
+    display: inline-block;
+    margin-left: 3px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+nav a img {
+    width: 20px;
+    margin-right: 3px;
+}
+
+nav .btn-navbar {
+    background: var(--vermelho-claro);
+    color: white;
+}
+
+/* .container-timer {
+    background: var(--vermelho-claro);
+    width: 480px;
+    margin: auto;
+    padding: 15px 50px;
+    border-radius: 5px;
+}
+
+.container-timer .timer {
+    color: white;
+    font-size: 7em;
+    margin: auto;
+    width: 300px;
+} */
