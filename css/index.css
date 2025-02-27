@@ -1,0 +1,19 @@
+:root {
+    --vermelho-principal: #BA4949;
+    --vermelho-escuro: #A44E4E;
+    --vermelho-claro: #C86D6D;
+    --vermelho-headings: #541C1F;
+    --vermelho-undeline: #F69D9A;
+    --vermelho-texto-link: #DB524D;
+    --cinza-texto: #785E60;
+    --branco: #fff;
+
+    /* 
+    --vermelho-escuro1: #A44E4E;
+    --vermelho-escuro2: #C04949;
+    --vermelho-escuro3: #BA4949;
+    --vermelho-escuro4: #A74242; 
+    --vermelho-claro1: #C86D6D;
+    --vermelho-claro2: #C15C5C;
+    */
+}
