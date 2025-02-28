@@ -8,7 +8,8 @@
 :root {
     --vermelho-principal: #BA4949;
     --vermelho-escuro: #A44E4E;
-    --vermelho-claro: #C86D6D;
+    --vermelho-claro1: #C86D6D;
+    --vermelho-claro2: #C15C5C;
     --vermelho-headings: #541C1F;
     --vermelho-undeline: #F69D9A;
     --vermelho-texto-link: #DB524D;
@@ -27,7 +28,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font-family: ArialRounded;
 }
 
@@ -45,6 +46,7 @@ header {
     padding: 15px 0;
     margin: auto;
     padding: 15px 12px;
+    box-sizing: content-box;
 }
 
 hr {
@@ -99,12 +101,12 @@ nav a img {
 }
 
 nav .btn-navbar {
-    background: var(--vermelho-claro);
+    background: var(--vermelho-claro1);
     color: white;
 }
 
-/* .container-timer {
-    background: var(--vermelho-claro);
+.container-timer {
+    background: var(--vermelho-claro2);
     width: 480px;
     margin: auto;
     padding: 15px 50px;
@@ -116,4 +118,36 @@ nav .btn-navbar {
     font-size: 7em;
     margin: auto;
     width: 300px;
-} */
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.container-timer span {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-timer span button.actived {
+    background: var(--vermelho-escuro);
+    padding: 6px 8px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.container-timer span button {
+    background: var(--vermelho-claro2);
+    color: white;
+    border: none;
+}
+
+.container-timer button.start {
+    background: white;
+    border: none;
+    color: var(--vermelho-principal);
+    padding: 13px 60px;
+    border-radius: 5px;
+    border-bottom: 5px solid #EBEBEB;
+    font-size: 25px;
+    margin: auto;
+    display: block; 
+}
