@@ -32,15 +32,14 @@
     font-family: ArialRounded;
 }
 
-main {
-
-}
-
+/* Background(vermelho) da parte de cima do site */
 .bg-vermelho {
     background-color: var(--vermelho-principal);
     width: 100vw;
     height: 100vh;
 }
+
+/* ===== HEADER ===== */
 
 header {
     padding: 15px 0;
@@ -49,7 +48,7 @@ header {
     box-sizing: content-box;
 }
 
-hr {
+header ~ hr {
     margin: 0 auto 40px;
 }
 
@@ -57,36 +56,40 @@ header, hr {
     width: 620px;
 }
 
-header span {
-
-}
-
-header button {
+/** Botões do navbar */
+header > nav > span > button.btn-navbar {
     display: inline-flex;
     align-items: center;
     padding: 8px;
     border: none;
     border-radius: 4px;
     margin-left: 8px;
+    background: var(--vermelho-claro1);
+    color: white;
 }
 
 /** Imagem dos botões da navbar */
-header button img {
+header > nav > span > button.btn-navbar > img {
     width: 16px;
     display: inline;
 }
 
-header button div {
+/* Texto dos botões do navbar */
+header > nav > span > button.btn-navbar > div {
     display: inline-block;
     margin-left: 3px;
 }
 
+/* ===== NAV ===== */
+
+/* Está fazendo o espaçamento na navbar */
 nav {
     display: flex;
     justify-content: space-between;
 }
 
-nav a {
+/* Link da navbar (pomofocus) */
+nav > a {
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -95,15 +98,13 @@ nav a {
     align-items: center;
 }
 
-nav a img {
+/* Imagem do link (pomofocus) */
+nav > a > img {
     width: 20px;
     margin-right: 3px;
 }
 
-nav .btn-navbar {
-    background: var(--vermelho-claro1);
-    color: white;
-}
+/* ===== CONTAINER-TIMER ===== */
 
 .container-timer {
     background: var(--vermelho-claro2);
@@ -113,7 +114,29 @@ nav .btn-navbar {
     border-radius: 5px;
 }
 
-.container-timer .timer {
+/* Espaçamento dos botões em cima do timer */
+.container-timer > span {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Botões de cima do timer */
+.container-timer > span > button {
+    background: var(--vermelho-claro2);
+    color: white;
+    border: none;
+}
+
+/* Botão ativo */
+.container-timer > span > button.actived {
+    background: var(--vermelho-escuro);
+    padding: 6px 8px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* timer (25:00) */
+.container-timer > .timer {
     color: white;
     font-size: 7em;
     margin: auto;
@@ -122,25 +145,8 @@ nav .btn-navbar {
     margin-bottom: 15px;
 }
 
-.container-timer span {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.container-timer span button.actived {
-    background: var(--vermelho-escuro);
-    padding: 6px 8px;
-    border-radius: 3px;
-    font-weight: bold;
-}
-
-.container-timer span button {
-    background: var(--vermelho-claro2);
-    color: white;
-    border: none;
-}
-
-.container-timer button.start {
+/* Botão START */
+.container-timer > button.start {
     background: white;
     border: none;
     color: var(--vermelho-principal);
@@ -150,4 +156,35 @@ nav .btn-navbar {
     font-size: 25px;
     margin: auto;
     display: block; 
+}
+
+/* ===== ÁREA TASKS ===== */
+
+.area-tasks {
+    width: 480px;
+    margin: auto;
+    color: white;
+}
+
+/* Centralizando texto em cima das tasks */
+.area-tasks > p {
+    text-align: center;
+}
+
+/* texto e botão em cima do hr */
+.area-tasks > div.top-tasks {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Botão três pontinhos */
+.area-tasks > .top-tasks > button.btn-tasks {
+    border: none;
+    background: var(--vermelho-claro1);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.area-tasks > .top-tasks > button.btn-tasks > img {
+    width: 16px;
 }
