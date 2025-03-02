@@ -8,6 +8,7 @@
 :root {
     --vermelho-principal: #BA4949;
     --vermelho-escuro: #A44E4E;
+    --vermelho-escuro4: #A74242; 
     --vermelho-claro1: #C86D6D;
     --vermelho-claro2: #C15C5C;
     --vermelho-headings: #541C1F;
@@ -19,7 +20,6 @@
     --vermelho-escuro1: #A44E4E;
     --vermelho-escuro2: #C04949;
     --vermelho-escuro3: #BA4949;
-    --vermelho-escuro4: #A74242; 
     --vermelho-claro1: #C86D6D;
     --vermelho-claro2: #C15C5C;
     */ 
@@ -166,8 +166,14 @@ nav > a > img {
     color: white;
 }
 
+/* Dando espaço de cima do #1 e time to focus */
+.area-tasks > div.container-text-tasks {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
 /* Centralizando texto em cima das tasks */
-.area-tasks > p {
+.area-tasks > div.container-text-tasks > p {
     text-align: center;
 }
 
@@ -187,4 +193,12 @@ nav > a > img {
 
 .area-tasks > .top-tasks > button.btn-tasks > img {
     width: 16px;
+}
+
+/* Botão(div) adicionar task */
+.area-tasks > .add-task {
+    margin-top: 15px;
+    background: var(--vermelho-escuro4);
+    border: 1px solid white;
+    border-radius: 8px;
 }
